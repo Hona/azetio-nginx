@@ -10,3 +10,4 @@ services:
       - ./nginx/sites-enabled:/etc/nginx/sites-enabled
       - /etc/ssl:/etc/ssl
       - ./files:/www/data
+      - ./static-pages:/www/pages
