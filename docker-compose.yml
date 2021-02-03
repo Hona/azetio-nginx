@@ -10,4 +10,6 @@ services:
       - ./nginx/sites-enabled:/etc/nginx/sites-enabled
       - /etc/ssl:/etc/ssl
       - ./files:/www/data
-      - ./static-pages:/www/pages
+      - ./logs:/var/log/nginx
+      - ./static-pages:/etc/nginx/html
+      - ./bhop-maps/sojourner.me:/www/fastdl
